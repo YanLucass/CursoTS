@@ -155,6 +155,27 @@ myArray = myArray.map((fruta) => {
 
 console.log(myArray);
 
+//8 tuplas
+type fiveNumbers = [number, number, number, number, number];
+const myArrayNumber: fiveNumbers = [1, 2, 3, 4, 5,];
+// const array: fiveNumbers = [1, 2, 3, 4, 5, 6];
+// const mixedArray: fiveNumbers = [1, 2, true, 4, 5,];
+
+type nameAndAge = [string, number];
+const anotherUser: nameAndAge = ["Yan", 20];
+console.log(anotherUser[0]);
+// anotherUser[0] = 1; //not possible, 0 is a string
+
+
+//9 tuplas com readonly
+function showNumbers(numbers: readonly [number, number]): void {
+    console.log(numbers[0]);
+    console.log(numbers[1]);
+    // numbers[0] = 3; not possible is readonly.
+
+}
+
+
 
 
 
